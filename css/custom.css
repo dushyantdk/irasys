@@ -130,6 +130,7 @@ ul{list-style-type:none;padding:0;margin:0;}
     margin: 0 auto;
     text-align: center;
 	width: 70px;
+    z-index: 999;
 }
 
 .mouse:hover{

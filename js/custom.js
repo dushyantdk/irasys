@@ -62,16 +62,4 @@ function setClassAccordingToPage() {
 /*---------------------
 show Landing apge and inner pages
 --------------------- */
-$('#carousel').carousel();$(document).on('click','.read_more_btn',function(){
-   $('.entery_section').slideUp( "slow", function() { });
-   $(this).parent().slideUp("slow")
-   $('.main').slideUp("slow").show();
-   $('.site-footer').slideUp("slow").show();
-   $('body').addClass('expertise');
-});
-
-/*---------------------
-  venobox
---------------------- */
-    var veno_box = $('.venobox');
-    veno_box.venobox();
+$('#carousel').carousel();
