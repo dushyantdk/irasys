@@ -12,32 +12,72 @@ $( document ).ready(function() {
        scaleBannerVideoSize('.video-container .filter');
        scaleBannerVideoSize('.video-container video');
    });
+
+
+
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+  // If element is scrolled into view, fade it in
+  $(window).scroll(function() {
+    $('.scroll-animations .animated').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass('fadeInRight');
+      }
+    });
+  });
+
 });
 
 function setClassAccordingToPage() {
    var html_page = getHtmlFileName();
    if(html_page == 'index') {
        if($('.main').css("display") != "none") {
-           $('body').addClass('expertise');
+          $('body').attr('class', '');
+          $('body').addClass('expertise');
        }
    } else if(html_page == 'how-we-work') {
+       $('body').attr('class', '');
        $('body').addClass('how-work');
    } else if(html_page == 'projects') {
-       $('body').addClass('expertise');
+       $('body').attr('class', '');
+       $('body').addClass('projects');
    } else if(html_page == 'contact') {
+       $('body').attr('class', '');
        $('body').addClass('contact');
+   } else if(html_page == 'expertise') {
+       $('body').attr('class', '');
+       $('body').addClass('expertise');
    } else {
        $('body').addClass('transparent');
    }
-}function getHtmlFileName() {
-   var filenameWithExtension = document.location.href.match(/[^\/]+$/)[0];
-   var filename = filenameWithExtension.split(".")[0];
+}
+function getHtmlFileName() {
+  if((window.location.href.match( /(index|contact|how-we-work|projects|contact)/) != '')) {
+    var filenameWithExtension = document.location.href.match(/[^\/]+$/)[0];
+    var filename = filenameWithExtension.split(".")[0];
+  } else {
+    var filename = 'expertise-test';
+  }
    return filename;
-}function scaleVideoContainer() {
+}
+
+
+
+
+function scaleVideoContainer() {
    var height = $(window).height() + 5;
    var unitHeight = parseInt(height) + 'px';
    $('.homepage-hero-module').css('height',unitHeight);
-}function initBannerVideoSize(element){    $(element).each(function(){
+}
+
+function initBannerVideoSize(element){    $(element).each(function(){
        $(this).data('height', $(this).height());
        $(this).data('width', $(this).width());
    });    scaleBannerVideoSize(element);}function scaleBannerVideoSize(element){
@@ -63,3 +103,19 @@ function setClassAccordingToPage() {
 show Landing apge and inner pages
 --------------------- */
 $('#carousel').carousel();
+
+$(document).on('click','#home_mouse',function(){
+   $('.entery_section').slideUp( "slow", function() { });
+   $(this).parent().slideUp("slow")
+   $('.main').slideUp("slow").show();
+   $('.site-footer').slideUp("slow").show();
+   $('body').attr('class', '');
+   $('body').addClass('expertise');
+   $('head').append('<script>new WOW().init();</script>');
+});
+
+/*---------------------
+  venobox
+--------------------- */
+ /*   var veno_box = $('.venobox');
+    veno_box.venobox();*/
