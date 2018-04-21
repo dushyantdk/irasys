@@ -165,6 +165,11 @@ z-index: 9999;
 	background:#fff;
 }
 
+.projects .navbar-fixed-top{
+	background-color:#fdcc5c;
+	border:none;
+}
+
 .navbar-default.nav-transparent{
     background: transparent;
 }
@@ -587,6 +592,174 @@ textarea.form-control {
     height: 500px;
 	width:100%;
 }
+
+
+
+
+.projects-block{
+	width:100%;
+	float:left;
+	padding:150px 0;
+}
+.portfolio-single{
+    width: 33.34%;
+    float: left;
+}
+.all-padding{
+    padding: 15px;
+}
+.single-awesome-project {
+  overflow: hidden;
+}
+.awesome-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.awesome-img::after{
+  position: absolute;
+  left:0;
+  top:0;
+  background: rgba(253,204,92,0.50) none repeat scroll 0 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.awesome-img img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.single-awesome-project:hover .awesome-img img {
+    transform: scale(1);
+    transition: 0.5s;
+}
+.awesome-img > a {
+  display: block;
+  position: relative;
+}
+.single-awesome-project:hover .awesome-img > a::after,
+.single-awesome-project:hover .awesome-img::after{
+	opacity: 1;
+}
+.single-awesome-project:hover .add-actions{
+	opacity: 1;
+    top: 50%;
+    margin-top: -30px;
+}
+.single-awesome-project:hover{
+    background: rgba(253,204,92,0.90) none repeat scroll 0 0;
+}
+.awesome-img > a::after {
+  background: rgba(253,204,92,0.98) none repeat scroll 0 0;
+  content: "";
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  left: 0;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.4s;
+}
+.add-actions {
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+    z-index: 9999;
+}
+.project-dec {
+  display: inline-block;
+}
+.project-dec h4 {
+  margin-bottom: 5px;
+}
+.project-dec h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.project-dec a {
+    color: #fff;
+}
+.project-dec a:hover {
+    color: #fff;
+}
+.project-dec span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.project-dec span:hover{
+    color:#ffb01b;
+}
+.awesome-menu {
+  padding-top: 10px;
+}
+.portfolio-heading {
+    font-size: 32px;
+    margin: 40px 0 20px;
+    text-transform: capitalize;
+}
+.load-btn {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+    position: relative;
+    transition: 0.5s;
+    border: 1px solid #333;
+    padding: 10px 40px 10px 20px;
+    background: #333;
+    transition: 0.5s;
+}
+.load-btn:after {
+    position: absolute;
+    content: "\e862";
+    right: 15px;
+    top: 10px;
+    font-family: water;
+    font-size: 14px;
+}
+.load-btn:hover,
+.load-btn:focus{
+    color: #ffb01b;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #ffb01b;
+    transition: 0.5s;
+}
+
+.portfolio-1-column .portfolio-single{
+    width: 100%;
+    float: none;
+    display: block;
+}
+.masonry-2-column .portfolio-single,
+.portfolio-2-column .portfolio-single{
+    width: 50%;
+    float: left;
+}
+.portfolio-4-column .portfolio-single{
+    width: 25%;
+    float: left;
+}
+
 
 @media (max-width:1270px){
     .slider_contnt h1 {
