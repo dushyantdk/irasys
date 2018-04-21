@@ -130,8 +130,9 @@ ul{list-style-type:none;padding:0;margin:0;}
     margin: 0 auto;
     text-align: center;
 	width: 70px;
-    z-index: 999;
 }
+
+#home_mouse{z-index: 999;}
 
 .mouse:hover{
 	 -webkit-animation-name: bounce;
@@ -153,6 +154,15 @@ z-index: 9999;
 	/*background-color:#fdcc5c;*/
     background-color:transparent;
 	border:none;
+}
+
+.expertise .navbar-fixed-top{
+	background-color:#fdcc5c;
+	border:none;
+}
+
+.contact .navbar-fixed-top{
+	background:#fff;
 }
 
 .navbar-default.nav-transparent{
@@ -256,18 +266,37 @@ font-size:16px;
 	margin-top: 30px;
 }
 
+
 .testimonial {
     width: 100%;
     float: left;
     background: #f5f5f5;
-    padding:60px 0;
+    padding:60px 0 80px;
     margin-top: 80px;
 }
 
-.testimonial .carousel, .testimonial .carousel-inner, .testimonial .carousel-inner .item {
+h2.testi_heading{
+	font-size:22px;
+	text-align:center;
+	font-weight:500;
+	margin:0 0 40px;
+}
+
+.testimonial .carousel{
     height: 100%;
     position: relative;
     width: 100%;
+}
+.testimonial .carousel-inner {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+ .testimonial .carousel-inner .item {
+    height: auto;
+    position: relative;
+    width: 100%;
+	
 }
 
 .testi_item {
@@ -313,7 +342,7 @@ font-size:16px;
           transition-property: opacity;
 }
 #fade-quote-carousel.carousel .carousel-indicators {
-  bottom:-34px;
+  bottom:-54px;
 }
 #fade-quote-carousel.carousel .carousel-indicators > li {
  background-color: #ccc;
@@ -356,6 +385,10 @@ text-align: left;
     width: 100%;
 
 }
+
+
+
+
 
 .site-footer {
     background: #505050;
@@ -427,9 +460,7 @@ a.footer-logo {
 
 img{max-width: 100%;}
 
-.contact .navbar-fixed-top{
-	background:#fff;
-}
+
 
 .contact .entry-text{
 	background: #fff;
@@ -556,10 +587,6 @@ textarea.form-control {
     height: 500px;
 	width:100%;
 }
-
-
-
-
 
 @media (max-width:1270px){
     .slider_contnt h1 {
