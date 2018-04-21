@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -13,6 +15,10 @@
       <link rel="stylesheet" media="screen" href="css/animate.css">
       <link rel="stylesheet" media="screen" href="css/style.css">
       <link href="css/font-awesome.min.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+      <script>
+         new WOW().init();
+      </script>
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -32,12 +38,12 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand slideInDown animated" href="#"><img src="images/logo-white.png" alt="logo" /></a>
+                  <a class="navbar-brand slideInDown animated" href="index.html"><img src="images/logo-white.png" alt="logo" /></a>
                </div>
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                     <li><a href="#">Expertise</a></li>
+                     <li><a href="expertise.html">Expertise</a></li>
                      <li><a href="#">How we work</a></li>
                      <li><a href="#">Projects</a></li>
                      <li><a href="contact.html">Contact</a></li>
@@ -63,14 +69,14 @@
          <div class="expertise_content">
             <div class="container">
                <div class="row section-top-m">
-                  <div class="col-lg-12 section_title animated fadeIn">
+                  <div class="col-lg-12 section_title wow fadeIn">
                      <h2>ASP.NET Development</h2>
                      <p>Our highly skilled, energetic and responsive .Net developers convert you business requirements into reality. We are a trusted name among the industry brand name. </p>
                   </div>
-                  <div class="col-md-6 animated fadeInLeft">
+                  <div class="col-md-6 animated wow slideInLeft">
                      <div class="block_img"><img src="images/lapi1.png" alt="lapi1" /></div>
                   </div>
-                  <div class="col-md-6 animated fadeInRight">
+                  <div class="col-md-6 animated wow slideInRight">
                      <div class="block_text">
                         <ul>
                            <li>Choose your best resource from a wide range of 50+ experienced developers</li>
@@ -84,11 +90,11 @@
                   </div>
                </div>
                <div class="row section-top-m">
-                  <div class="col-lg-12 section_title animated fadeIn">
+                  <div class="col-lg-12 section_title wow slideInUp">
                      <h2>Mobile Development</h2>
                      <p>Our dedicated professionals are experts in native as well as cross-platform mobile development. Our applications are aligned with latest technologies that allow our customers to reach their business users in a faster manner.</p>
                   </div>
-                  <div class="col-md-6 animated fadeInLeft">
+                  <div class="col-md-6 wow slideInLeft">
                      <div class="block_text">
                         <ul>
                            <li>Choose your best resource from a wide range of 50+ experienced developers</li>
@@ -100,19 +106,19 @@
                         <a class="readmore" href="#">Read More</a>
                      </div>
                   </div>
-                  <div class="col-md-6 animated fadeInRight">
+                  <div class="col-md-6 wow slideInRight">
                      <div class="block_img"><img src="images/lapi2.png" alt="lapi1" /></div>
                   </div>
                </div>
                <div class="row section-top-m">
-                  <div class="col-lg-12 section_title animated fadeIn">
+                  <div class="col-lg-12 section_title wow slideInUp">
                      <h2>WordPress Development</h2>
                      <p>WordPress, One of the most commonly used CMSs; our developers are top notch experts either to customize a themes or third party plugin integration/development. Let's talk in detail! </p>
                   </div>
-                  <div class="col-md-6 animated fadeInLeft">
+                  <div class="col-md-6 wow slideInLeft">
                      <div class="block_img"><img src="images/lapi3.png" alt="lapi1" /></div>
                   </div>
-                  <div class="col-md-6 animated fadeInRight">
+                  <div class="col-md-6 wow slideInRight">
                      <div class="block_text">
                         <ul>
                            <li>Choose your best resource from a wide range of 50+ experienced developers</li>
@@ -126,11 +132,11 @@
                   </div>
                </div>
                <div class="row section-top-m">
-                  <div class="col-lg-12 section_title animated fadeIn">
+                  <div class="col-lg-12 section_title wow slideInUp" >
                      <h2>Windows Development</h2>
                      <p>Our dedicated professionals are experts in native as well as cross-platform mobile development. Our applications are aligned with latest technologies that allow our customers to reach their business users in a faster manner.</p>
                   </div>
-                  <div class="col-md-6 animated fadeInLeft">
+                  <div class="col-md-6 wow slideInLeft">
                      <div class="block_text">
                         <ul>
                            <li>Choose your best resource from a wide range of 50+ experienced developers</li>
@@ -142,7 +148,7 @@
                         <a class="readmore" href="#">Read More</a>
                      </div>
                   </div>
-                  <div class="col-md-6 animated fadeInRight">
+                  <div class="col-md-6 wow slideInRight">
                      <div class="block_img"><img src="images/lapi4.png" alt="lapi1" /></div>
                   </div>
                </div>
@@ -151,11 +157,14 @@
          <section id="carousel" class="testimonial">
             <div class="container">
                <div class="row">
+               		<div class="col-lg-12">
+                    	<h2 class="testi_heading">What they say abot us</h2>
+                    </div>
                   <div class="col-md-12">
                      <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
                         <!-- Carousel indicators -->
                         <ol class="carousel-indicators">
-                           <li data-target="#fade-quote-carousel" data-slide-to="0"  class="active"></li>
+                           <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
                            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
                            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
                         </ol>
@@ -168,7 +177,7 @@
                                        <i class="fa fa-quote-left fa-4x"></i>
                                        <img src="images/kitco.png" style="width: 150px;height:70px;">
                                        <blockquote>
-                                          <p></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
                                           </p>
                                           <footer class="blockquote-footer">Jane Doe<span>CEO, Infotech,INC</span></footer>
                                        </blockquote>
@@ -179,22 +188,21 @@
                                        <i class="fa fa-quote-left fa-4x"></i>
                                        <img src="images/kitco.png" style="width: 150px;height:70px;">
                                        <blockquote>
-                                          <p></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
                                           </p>
                                           <footer class="blockquote-footer">Jane Doe<span>CEO, Infotech,INC</span></footer>
                                        </blockquote>
                                     </div>
                                  </div>
                               </div>
-                           </div>
+                           </div>	
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </section>
-      </div>
-      <footer class="site-footer" style="display: none;">
+         <footer class="site-footer">
          <div class="container">
             <div id="footer-row">
                <div class="footer-top row">
@@ -246,6 +254,8 @@
             </div>
          </div>
       </footer>
+      </div>
+      
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -255,3 +265,4 @@
       <script src="js/app.js"></script>
    </body>
 </html>
+
