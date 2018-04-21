@@ -114,8 +114,3 @@ $(document).on('click','#home_mouse',function(){
    $('head').append('<script>new WOW().init();</script>');
 });
 
-/*---------------------
-  venobox
---------------------- */
- /*   var veno_box = $('.venobox');
-    veno_box.venobox();*/
