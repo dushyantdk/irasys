@@ -83,9 +83,9 @@ ul{list-style-type:none;padding:0;margin:0;}
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-.carousel,
-.carousel-inner,
-.carousel-inner .item  {
+.home_car.carousel,
+.home_car .carousel-inner,
+.home_car .carousel-inner .item  {
     height: 100%;
     position: absolute;
     width: 100%;
@@ -156,6 +156,10 @@ left: 0;
 z-index: 9999;
 }
 
+.collapse .nav{
+    display: none;
+}
+
 .navbar-default{
 	/*background-color:#fdcc5c;*/
     background-color:transparent;
@@ -165,6 +169,10 @@ z-index: 9999;
 .expertise .navbar-fixed-top{
 	background-color:#fdcc5c;
 	border:none;
+}
+
+.expertise .collapse .nav, .how-work .collapse .nav, .contact .collapse .nav, .projects .collapse .nav{
+    display: block;
 }
 
 .how-work .navbar-fixed-top{
@@ -192,6 +200,23 @@ z-index: 9999;
 .navbar-default .navbar-nav > li > a {
     color: #fff;
 	font-size:16px;
+    font-weight: 500;
+}
+
+
+.projects .navbar-default .navbar-nav > li > a:hover, .projects .navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+
+.contact .navbar-default .navbar-nav > li > a:hover, .contact .navbar-default .navbar-nav > li > a:focus {
+    color: #000;
+    background-color: transparent;
+}
+
+.how-work .navbar-default .navbar-nav > li > a:hover, .how-work .navbar-default .navbar-nav > li > a:focus {
+    color: #f5f5f5 !important;
+    background-color: transparent;
 }
 
 .navbar-right {
@@ -329,7 +354,6 @@ h2.testi_heading{
 }
  .testimonial .carousel-inner .item {
     height: auto;
-    position: relative;
     width: 100%;
 	
 }
@@ -361,7 +385,7 @@ h2.testi_heading{
 #fade-quote-carousel.carousel {
   padding-bottom:0;
 }
-#fade-quote-carousel.carousel .carousel-inner .item {
+/*#fade-quote-carousel.carousel .carousel-inner .item {
   opacity: 0;
   -webkit-transition-property: opacity;
       -ms-transition-property: opacity;
@@ -372,7 +396,7 @@ h2.testi_heading{
   -webkit-transition-property: opacity;
       -ms-transition-property: opacity;
           transition-property: opacity;
-}
+}*/
 #fade-quote-carousel.carousel .carousel-indicators {
   bottom:-54px;
 }
@@ -1423,5 +1447,18 @@ element {
 
 }
 
+.expertise_content .section_title {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.expertise_content .section_title h2 {
+    padding-bottom: 20px;
+    font-size: 34px;
+}
+
+.readmore {
+    margin-bottom: 50px;
+}
 
 }
