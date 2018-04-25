@@ -166,17 +166,29 @@ z-index: 9999;
 	border:none;
 }
 
-.expertise .navbar-fixed-top{
-	background-color:#fdcc5c;
+.transparent .navbar-fixed-top{
+    background-color:transparent;
+    border:none;
+}
+
+.case-study .navbar{
+    background-color:#fff;
+    border:none;
+}
+
+
+
+.navbar-fixed-top{
+	background-color:#fff;
 	border:none;
 }
 
-.expertise .collapse .nav, .how-work .collapse .nav, .contact .collapse .nav, .projects .collapse .nav{
+.expertise .collapse .nav, .how-work .collapse .nav, .contact .collapse .nav, .projects .collapse .nav, .case-study .collapse .nav{
     display: block;
 }
 
-.how-work .navbar-fixed-top{
-	background-color:#505050;
+/*.how-work .navbar-fixed-top{
+	background-color:#fff;
 	border:none;
 }
 
@@ -185,10 +197,10 @@ z-index: 9999;
 }
 
 .projects .navbar-fixed-top{
-	background-color:#fdcc5c;
+	background-color:#fff;
 	border:none;
 }
-
+*/
 .navbar-default.nav-transparent{
     background: transparent;
 }
@@ -198,25 +210,30 @@ z-index: 9999;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #fff;
+    color: #333;
 	font-size:16px;
     font-weight: 500;
 }
 
 
-.projects .navbar-default .navbar-nav > li > a:hover, .projects .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #333;
     background-color: transparent;
 }
 
-.contact .navbar-default .navbar-nav > li > a:hover, .contact .navbar-default .navbar-nav > li > a:focus {
+/*.contact .navbar-default .navbar-nav > li > a:hover, .contact .navbar-default .navbar-nav > li > a:focus {
     color: #000;
+    background-color: transparent;
+}*/
+
+.how-work .navbar-default .navbar-nav > li > a {
+    color: #fff ;
     background-color: transparent;
 }
 
-.how-work .navbar-default .navbar-nav > li > a:hover, .how-work .navbar-default .navbar-nav > li > a:focus {
-    color: #f5f5f5 !important;
-    background-color: transparent;
+.how-work .navbar-fixed-top .navbar-nav > li > a{
+     color: #333;
+    border:none;
 }
 
 .navbar-right {
@@ -1259,6 +1276,37 @@ textarea.form-control {
     background: url(../images/circle6.png) no-repeat;
     background-size: auto auto;
     background-size: 100% 100%;
+}
+
+.project-des{
+    width: 100%;
+    float: left;
+    padding:100px 0 0;
+}
+
+
+.projects-block{
+    width: 100%;
+    float: left;
+    padding:100px 0;
+}
+
+.work-title h2 {
+    color: #343434;
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.projectmain_img{
+    margin-bottom: 50px;
+}
+
+.gray_bg{
+    width: 100%;
+    float: left;
+    background: #505050;
+    color: #fff !important
 }
 
 
