@@ -101,6 +101,7 @@ ul{list-style-type:none;padding:0;margin:0;}
     align-self: center;
     justify-content: center;
     flex-direction: column;
+	background-image: url(../images/video-overlay.png);
 
 }
 
@@ -206,14 +207,37 @@ z-index: 9999;
 }
 
 .navbar-brand{
-	height: 94px;
+	height: 67px;
+width: 210px;
+margin-top: 0;
+padding: 12px 15px;
 }
 
+
+header .navbar-fixed-top .navbar-collapse{
+    padding-right: 15px;
+padding-left: 15px;
+}
 .navbar-default .navbar-nav > li > a {
     color: #333;
 	font-size:16px;
     font-weight: 500;
 }
+
+.gray-logo {
+    display: none;
+}
+
+
+
+header .navbar-fixed-top  .gray-logo {
+    display: block;
+}
+
+header .navbar-fixed-top  .white-logo {
+    display: none;
+}
+
 
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -237,7 +261,7 @@ z-index: 9999;
 }
 
 .navbar-right {
-    margin-top: 20px;
+    margin-top:6px;
 }
 
 /***************       NAV END           *********************/
