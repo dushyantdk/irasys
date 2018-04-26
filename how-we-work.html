@@ -39,7 +39,8 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand slideInDown animated" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                  <a class="navbar-brand white-logo slideInDown animated" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                  <a class="navbar-brand gray-logo slideInDown animated" href="index.html"><img src="images/logo-gray.png" alt="logo" /></a>
                </div>
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,7 +60,7 @@
          </nav>
       </header>
       <div class="main">
-         <div class="entry-text">
+         <div class="entry-text entry-howwork">
             <div class="holder">
                <div class="frame">
                   <div class="frame2">
@@ -69,7 +70,7 @@
             </div>
             <a class="mouse animated" href="#"><img src="images/mouse.png" alt=""></a>
          </div>
-         <div class="howe_work_content">
+         <div id="#d" class="home_work_content">
             <div class="container">
                 	<div class="row circle-boxes">
                     	<div class="col-md-4 text-center">
@@ -106,7 +107,7 @@
                 			</div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row hide_there">
                     	<div class="col-lg-12">
                         	<div class="lines">
                                 <div class="lines-holder wow animated animated" style="visibility: visible;">
@@ -134,7 +135,7 @@
                         	<div class="line4-holder"><span class="line4 wow animated"></span></div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row test_there">
                     	<div class="col-lg-12 text-center">
                         	<div class="circle-boxes2">
                                 <div class="lines-circle-holder wow animated animated">
@@ -194,7 +195,7 @@
                 </div>
          </div>
          
-         <footer class="site-footer">
+      <footer class="site-footer">
          <div class="container">
             <div id="footer-row">
                <div class="footer-top row">
@@ -252,6 +253,35 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+        function isScrolledIntoView(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+$( document ).ready(function() {
+$(window).scroll(function() {
+  if($('.pm-box').css('visibility') == 'hidden') {
+    $('.entry-howwork').fadeOut("slow");
+  }
+
+
+      /*if (isScrolledIntoView(this)) {
+        $(this).addClass('red');
+      } else {
+        $(this).removeClass('red');
+      }*/
+   
+});
+        // if(isScrolledIntoView('#d')) {
+        //     alert('s');
+        //   $('.entry-howwork').css('display', 'none');
+        // }
+
+});
+      </script>
       <script src="js/custom.js"></script>
       <script src="js/particles.js"></script>
       <script src="js/app.js"></script>
