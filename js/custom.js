@@ -15,25 +15,30 @@ $( document ).ready(function() {
 
 
 
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+//   function isScrolledIntoView(elem) {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
-  // If element is scrolled into view, fade it in
-  $(window).scroll(function() {
-    $('.scroll-animations .animated').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInRight');
-      }
-    });
-  });
+//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+//   }
+//   // If element is scrolled into view, fade it in
+//   $(window).scroll(function() {
+//     $('.scroll-animations .animated').each(function() {
+//       if (isScrolledIntoView(this) === true) {
+//         $(this).addClass('fadeInRight');
+//       }
+//     });
+//   });
+
+
 
 });
+
+
+
 
 function setClassAccordingToPage() {
    var html_page = getHtmlFileName();
