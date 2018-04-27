@@ -145,3 +145,22 @@ $(window).scroll(function () {
     }
 
 });
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if($(window).width() >768){
+      if (scroll >= 0) {
+          $('.nav-howork').addClass('navbar-fixed-top');
+          // $('.header_logo').removeClass('is-hidden');
+          // //$(".top_header").hide();
+          // $(".navbar-brand img").show(50);
+      } else {
+          $('.nav-howork').removeClass('navbar-fixed-top');
+          // $('.header_logo').addClass('is-hidden');
+          // //$(".top_header").show();
+          // $(".navbar-brand img").hide(50);
+      }
+    }
+
+});
