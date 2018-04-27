@@ -27,7 +27,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
    </head>
-   <body>
+   <body class="how-work">
       <header>
          <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -72,6 +72,11 @@
          </div>
          <div id="#d" class="home_work_content">
             <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 how-work-h">
+                      <h1>Feel free to choose from our three services to best suite your business needs. </h1>
+                    </div>
+                  </div>
                 	<div class="row circle-boxes">
                     	<div class="col-md-4 text-center">
                         	<div class="circle-box">
@@ -261,26 +266,15 @@
             var elemBottom = elemTop + $(elem).height();
             return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
         }
-$( document ).ready(function() {
-$(window).scroll(function() {
-  if($('.pm-box').css('visibility') == 'hidden') {
-    $('.entry-howwork').fadeOut("slow");
-  }
+        $( document ).ready(function() {
+          $(window).scroll(function() {
+            if($('.pm-box').css('visibility') == 'hidden') {
+              $('.entry-howwork').fadeOut("slow");
+            }
 
-
-      /*if (isScrolledIntoView(this)) {
-        $(this).addClass('red');
-      } else {
-        $(this).removeClass('red');
-      }*/
-   
-});
-        // if(isScrolledIntoView('#d')) {
-        //     alert('s');
-        //   $('.entry-howwork').css('display', 'none');
-        // }
-
-});
+             
+          });
+        });
       </script>
       <script src="js/custom.js"></script>
       <script src="js/particles.js"></script>
