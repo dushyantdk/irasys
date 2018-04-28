@@ -231,11 +231,6 @@ padding: 12px 15px;
     background-color: transparent;
 }
 
-.how-work .navbar{
-    background-color:#505050;
-    border:none;
-}
-
 
 
 .case-study .navbar, .contact .navbar{
@@ -1422,6 +1417,12 @@ text-align: center;
 }
 
 @media (max-width:990px){
+    .how-work .navbar{
+    background-color:#505050;
+    border:none;
+}
+
+
 .navbar-brand {
     height: 63px;
 }    
