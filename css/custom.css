@@ -157,72 +157,133 @@ left: 0;
 z-index: 9999;
 }
 
-.collapse .nav{
+/*.collapse .nav{
     display: none;
 }
 
+
+.expertise .collapse .nav, .how-work .collapse .nav, .contact .collapse .nav, .projects .collapse .nav, .case-study .collapse .nav{
+    display: block;
+}*/
+
+.navbar-brand{
+    height: 67px;
+width: 210px;
+margin-top: 0;
+padding: 12px 15px;
+}
+
 .navbar-default{
-	/*background-color:#fdcc5c;*/
     background-color:transparent;
 	border:none;
 }
 
-.transparent .navbar-fixed-top{
-    background-color:transparent;
-    border:none;
+
+.navbar-right {
+    margin-top:6px;
 }
-
-.case-study .navbar{
-    background-color:#fff;
-    border:none;
-}
-
-
 
 .navbar-fixed-top{
 	background-color:#fff;
 	border:none;
 }
 
-.expertise .collapse .nav, .how-work .collapse .nav, .contact .collapse .nav, .projects .collapse .nav, .case-study .collapse .nav{
-    display: block;
+
+.expertise .navbar{
+    background-color:#fdcc5c;
+    border:none;
 }
 
-/*.how-work .navbar-fixed-top{
-	background-color:#fff;
-	border:none;
+.expertise .navbar.navbar-fixed-top{
+    background-color:#fff;
+    border:none;
 }
 
-.contact .navbar-fixed-top{
-	background:#fff;
+.expertise .navbar-default .navbar-nav > li > a:hover, .expertise .navbar-default .navbar-nav > li > a.active {
+    color: #fff ;
+    background-color: transparent;
 }
 
-.projects .navbar-fixed-top{
-	background-color:#fff;
-	border:none;
-}
-*/
-.navbar-default.nav-transparent{
-    background: transparent;
+
+.expertise .navbar-default.navbar-fixed-top .navbar-nav > li > a:hover, .expertise .navbar-default.navbar-fixed-top .navbar-nav > li > a.active {
+    color: #ccc ;
+    background-color: transparent;
 }
 
-.navbar-brand{
-	height: 67px;
-width: 210px;
-margin-top: 0;
-padding: 12px 15px;
+.projects .navbar{
+    background-color:#fdcc5c;
+    border:none;
 }
+
+.projects .navbar.navbar-fixed-top{
+    background-color:#fff;
+    border:none;
+}
+
+.projects .navbar-default .navbar-nav > li > a:hover, .projects .navbar-default .navbar-nav > li > a.active {
+    color: #fff ;
+    background-color: transparent;
+}
+
+
+.projects .navbar-default.navbar-fixed-top .navbar-nav > li > a:hover, .projects .navbar-default.navbar-fixed-top .navbar-nav > li > a.active {
+    color: #ccc ;
+    background-color: transparent;
+}
+
+.how-work .navbar{
+    background-color:#505050;
+    border:none;
+}
+
+
+
+.case-study .navbar, .contact .navbar{
+    background-color:#fff;
+    border:none;
+}
+
+
+.how-work .navbar-default .navbar-nav > li > a {
+    color: #fff ;
+    background-color: transparent;
+}
+
+.how-work .navbar-fixed-top .navbar-nav > li > a{
+    color: #333;
+    border:none;
+}
+
+.how-work .navbar-default .navbar-nav > li > a:hover, .how-work .navbar-default .navbar-nav > li > a.active {
+    color: #ccc ;
+    background-color: transparent;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+    font-size:16px;
+    font-weight: 500;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {
+    color: #ccc ;
+    background-color: transparent;
+}
+
 
 
 header .navbar-fixed-top .navbar-collapse{
     padding-right: 15px;
 padding-left: 15px;
 }
-.navbar-default .navbar-nav > li > a {
-    color: #333;
-	font-size:16px;
-    font-weight: 500;
-}
+
+
 
 .gray-logo {
     display: none;
@@ -239,31 +300,6 @@ header .navbar-fixed-top  .white-logo {
 }
 
 
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #333;
-    background-color: transparent;
-}
-
-/*.contact .navbar-default .navbar-nav > li > a:hover, .contact .navbar-default .navbar-nav > li > a:focus {
-    color: #000;
-    background-color: transparent;
-}*/
-
-.how-work .navbar-default .navbar-nav > li > a {
-    color: #fff ;
-    background-color: transparent;
-}
-
-.how-work .navbar-fixed-top .navbar-nav > li > a{
-     color: #333;
-    border:none;
-}
-
-.navbar-right {
-    margin-top:6px;
-}
-
 /***************       NAV END           *********************/
 
 /***************       ENTERY TEXT START           *********************/
@@ -275,7 +311,7 @@ header .navbar-fixed-top  .white-logo {
 .entry-text{
 	background:#fdcc5c;
 	font-size: 38px;
-line-height: 44px;
+line-height:38px;
 position: relative;
 height: 100vh;
 min-height: 600px;
@@ -566,9 +602,6 @@ img{max-width: 100%;}
 }
 
 .contact .entry-text .frame2 h1 {
-    color: #505050;
-}
-.contact .navbar-default .navbar-nav > li > a {
     color: #505050;
 }
 
@@ -1285,8 +1318,8 @@ text-align: center;
     font-weight: 400;
     position: relative;
     display: block;
-    width: 311px;
-    height: 310px;
+    width:300px;
+    height:300px;
     margin: 0 auto 101px;
     padding: 90px 60px 0;
     text-align: center;
@@ -1547,6 +1580,53 @@ element {
 
 .readmore {
     margin-bottom: 50px;
+}
+
+.over-img {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.over-img img {
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.rounded-border {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-right .pull-right, .footer-right .text-right {
+    float: left !important;
+    text-align: left;
+}
+
+}
+
+
+@media (max-width:767px){
+
+.entry-text .frame2 h1 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.circle-boxes2 .circle-box.alt2, .circle-boxes2 .circle-box.alt{
+    margin: 0;
+}
+
+.masonry-2-column .portfolio-single, .portfolio-2-column .portfolio-single {
+    width: 100%;
+    float: left;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
 }
 
 }
