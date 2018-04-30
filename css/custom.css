@@ -188,6 +188,13 @@ padding: 12px 15px;
 	border:none;
 }
 
+.navbar-default .navbar-nav > li > a {
+    font-size:16px;
+    font-weight: 500;
+}
+
+
+
 
 .expertise .navbar{
     background-color:#fdcc5c;
@@ -199,8 +206,17 @@ padding: 12px 15px;
     border:none;
 }
 
-.expertise .navbar-default .navbar-nav > li > a:hover, .expertise .navbar-default .navbar-nav > li > a.active {
+.expertise .navbar-default .navbar-nav > li > a{
     color: #fff ;
+}
+
+.expertise .navbar-default .navbar-nav > li > a:hover, .expertise .navbar-default .navbar-nav > li > a.active {
+    color: #333 ;
+    background-color: transparent;
+}
+
+.expertise .navbar-default.navbar-fixed-top .navbar-nav > li > a{
+    color: #333 ;
     background-color: transparent;
 }
 
@@ -209,6 +225,8 @@ padding: 12px 15px;
     color: #ccc ;
     background-color: transparent;
 }
+
+
 
 .projects .navbar{
     background-color:#fdcc5c;
@@ -220,8 +238,17 @@ padding: 12px 15px;
     border:none;
 }
 
-.projects .navbar-default .navbar-nav > li > a:hover, .projects .navbar-default .navbar-nav > li > a.active {
+.projects .navbar-default .navbar-nav > li > a{
     color: #fff ;
+}
+
+.projects .navbar-default .navbar-nav > li > a:hover, .projects .navbar-default .navbar-nav > li > a.active {
+    color: #333 ;
+    background-color: transparent;
+}
+
+.projects .navbar-default.navbar-fixed-top .navbar-nav > li > a{
+    color: #333 ;
     background-color: transparent;
 }
 
@@ -230,6 +257,9 @@ padding: 12px 15px;
     color: #ccc ;
     background-color: transparent;
 }
+
+
+
 
 
 
@@ -255,21 +285,20 @@ padding: 12px 15px;
 }
 
 
-.navbar-default .navbar-nav > li > a {
-    color: #333;
-    font-size:16px;
-    font-weight: 500;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #ccc;
-    background-color: transparent;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {
+.contact .navbar-default .navbar-nav > li > a:hover, .contact .navbar-default .navbar-nav > li > a.active {
     color: #ccc ;
     background-color: transparent;
 }
+
+.case-study .navbar-default .navbar-nav > li > a:hover, .case-study .navbar-default .navbar-nav > li > a.active {
+    color: #ccc ;
+    background-color: transparent;
+}
+
+
+
+
+
 
 
 
@@ -348,6 +377,11 @@ font-size:16px;
 
 
 /***************       EXPERTISE TEXT START           *********************/
+
+
+body.expertise{
+    overflow-x: hidden;
+}
 
 .expertise_content{
 	width:100%;
