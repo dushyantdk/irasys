@@ -164,3 +164,10 @@ $(window).scroll(function () {
     }
 
 });
+
+
+$(document).on('scroll', 'http://irasys.herokuapp.com/', function() {
+
+window.location = "expertise.html"
+
+})
