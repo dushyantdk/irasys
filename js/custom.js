@@ -1,7 +1,7 @@
  
 $(window).scroll(function(){
   if ( $('#home').length ) {
-window.location.href = "http://localhost/irasys-master/expertise.html";
+window.location.href = "https://irasys.herokuapp.com/expertise.html";
   }
 
 });
