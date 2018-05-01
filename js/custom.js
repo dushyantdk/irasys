@@ -1,3 +1,13 @@
+ 
+$(window).scroll(function(){
+  if ( $('#home').length ) {
+window.location.href = "http://localhost/irasys-master/expertise.html";
+  }
+
+});
+
+
+
  // JavaScript Document
 //jQuery is required to run this code
 $( document ).ready(function() {
@@ -165,9 +175,3 @@ $(window).scroll(function () {
 
 });
 
-
-$(document).on('scroll', 'http://irasys.herokuapp.com/', function() {
-
-window.location = "expertise.html"
-
-})
