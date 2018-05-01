@@ -211,12 +211,12 @@ padding: 12px 15px;
 }
 
 .expertise .navbar-default .navbar-nav > li > a:hover, .expertise .navbar-default .navbar-nav > li > a.active {
-    color: #333 ;
+    color: #777 ;
     background-color: transparent;
 }
 
 .expertise .navbar-default.navbar-fixed-top .navbar-nav > li > a{
-    color: #333 ;
+    color: #777 ;
     background-color: transparent;
 }
 
@@ -243,12 +243,12 @@ padding: 12px 15px;
 }
 
 .projects .navbar-default .navbar-nav > li > a:hover, .projects .navbar-default .navbar-nav > li > a.active {
-    color: #333 ;
+    color: #777 ;
     background-color: transparent;
 }
 
 .projects .navbar-default.navbar-fixed-top .navbar-nav > li > a{
-    color: #333 ;
+    color: #777 ;
     background-color: transparent;
 }
 
@@ -275,7 +275,7 @@ padding: 12px 15px;
 }
 
 .how-work .navbar-fixed-top .navbar-nav > li > a{
-    color: #333;
+    color: #777;
     border:none;
 }
 
