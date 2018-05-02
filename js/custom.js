@@ -1,10 +1,10 @@
  
-$(window).scroll(function(){
-  if ( $('#home').length ) {
-window.location.href = "https://irasys.herokuapp.com/expertise.html";
+ $(window).scroll(function(){
+   if ( $('#home').length ) {
+ window.location.href = "https://irasys.herokuapp.com/expertise.html";
   }
 
-});
+ });
 
 
 
@@ -46,7 +46,7 @@ function getHtmlFileName() {
 
 
 function scaleVideoContainer() {
-   var height = $(window).height() + 5;
+   var height = $(window).height() + 0;
    var unitHeight = parseInt(height) + 'px';
    $('.homepage-hero-module').css('height',unitHeight);
 }
@@ -56,7 +56,7 @@ function initBannerVideoSize(element){    $(element).each(function(){
        $(this).data('width', $(this).width());
    });    scaleBannerVideoSize(element);}function scaleBannerVideoSize(element){
    var windowWidth = $(window).width(),
-   windowHeight = $(window).height() + 5,
+   windowHeight = $(window).height() + 0,
    videoWidth,
    videoHeight;
    // console.log(windowHeight);
