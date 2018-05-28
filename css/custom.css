@@ -491,18 +491,6 @@ h2.testi_heading{
 #fade-quote-carousel.carousel {
   padding-bottom:0;
 }
-/*#fade-quote-carousel.carousel .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
-}
-#fade-quote-carousel.carousel .carousel-inner .active {
-  opacity: 1;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
-}*/
 #fade-quote-carousel.carousel .carousel-indicators {
   bottom:-54px;
 }
@@ -1415,8 +1403,176 @@ text-align: center;
 
 /***************       HOW WE WORK TEXT END           *********************/
 
+/***************       ABOUT US CSS START          *********************/
+.about_content{
+    width: 100%;
+    float: left;
+    padding:50px 0; 
+    position: relative;
+}
 
+.about_content:before{
+     background: url(../images/Irasys-bg.png);
+    background-repeat: no-repeat;
+background-position: center;
+position: absolute;
+content: '';
+bottom: -86px;
+right: -70px;
+width: 664px;
+height: 100%;
+opacity: 0.1;
+}
 
+.about_content h2{
+    padding-bottom: 45px;
+}
+
+.mt-5{
+    margin-top: 100px;
+}
+
+.d-flex {
+    display: -ms-flexbox;
+    -ms-flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    -ms-flex-align: stretch;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-align-items: stretch;
+    -webkit-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+}
+
+ .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-align-items: stretch;
+    -webkit-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+}
+
+.aboutlogo {
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #505050;
+    border-radius: 50%;
+    height: 155px;
+    padding-top: 29px;
+}
+
+.aboutlogo img {
+    width: 120px;
+}
+
+.about_block{
+    position: relative;
+}
+
+.about_block h3 {
+    padding: 5px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fdcc5c;
+    position: relative;
+}
+
+.about_block h3::after {
+
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #fdcc5c;
+    left: 0;
+    bottom: 0;
+
+}
+
+.why-irasys{
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+    background: url(../images/mslider1.jpg);
+    background-size: cover;
+    background-position:center; 
+    background-repeat: no-repeat;
+    min-height: 200px;
+    position: relative;
+}
+
+.why-irasys:before{
+    background: url(../images/video-overlay.png);
+    background-repeat:repeat;
+    background-size: cover;
+    background-position:center; 
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.why-irasys h2{
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.why-irasys li {
+    float: left;
+    width:100%;
+    color: #fff;
+    padding: 10px 0 10px 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.why-irasys li:before{
+ position: absolute;
+ background: url(../images/li-icon.png);
+ background-repeat: no-repeat;
+left: 0;
+width: 20px;
+content: '';
+top: 14px;
+height: 20px;
+}
+/***************       ABOUT US CSS START          *********************/
 
 @media (max-width:1270px){
     .slider_contnt h1 {
