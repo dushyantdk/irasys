@@ -15,7 +15,7 @@
       <link rel="stylesheet" media="screen" href="css/animate.css">
       <link rel="stylesheet" media="screen" href="css/style.css">
       <link href="css/font-awesome.min.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
       <script>
          new WOW().init();
@@ -69,9 +69,13 @@
                   </div>
                </div>
             </div>
+            <div class="ripples-animation">
+            <canvas id="ripples"></canvas>
+            </div>
             <a class="mouse animated" href="#"><img src="images/mouse.png" alt=""></a>
          </div>
          <div class="expertise_content">
+
             <div class="container">
                <div class="row section-top-m">
                   <div class="col-lg-12 section_title wow fadeIn">
@@ -199,7 +203,7 @@
                                     </div>
                                  </div>
                               </div>
-                           </div>	
+                           </div>
                            <div class="item">
                               <div class="row text-center">
                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -273,10 +277,10 @@
                   <div class="col-md-12 footer-right">
                      <div id="text-2" class="widget widget_text">
                         <div class="textwidget">
-                           <div class="copyright-text text-center">
-                              <p style="color:#8796a4">By using this site, you agree to cookies being used as described in our <a href="#">Privacy Policy.</a></p>
-                              <p>© 2003 – 2017 irasys Technologies | All Rights Reserved</p>
-                           </div>
+                          <div class="copyright-text text-center">
+                             <p class="bottom_links"><a href="about.html">About</a><a href="career.html">Career</a><a href="#">Privacy Policy</a></p>
+                             <p>© 2003 – 2017 irasys Technologies | All Rights Reserved</p>
+                          </div>
                         </div>
                      </div>
                   </div>
@@ -285,14 +289,17 @@
          </div>
       </footer>
       </div>
-      
+
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/TweenMax.js"></script>
+      <script src="js/get.js"></script>
+      <script src="js/easeljs-0.js"></script>
+      <script src="js/ripples.js"></script>
       <script src="js/custom.js"></script>
       <script src="js/particles.js"></script>
       <script src="js/app.js"></script>
    </body>
 </html>
-
