@@ -17,27 +17,19 @@ ul{list-style-type:none;padding:0;margin:0;}
 
 
 body.expertise .entry-text::after {
-
-    content: '';
+	content: '';
     position: absolute;
-    background-image: url(../images/stars.png) ;
+    background-image: url(../images/banner-1.png) ;
     width: 100%;
-    height: 100%;
     bottom: 0;
-    left: 0;
-		background-repeat: repeat;
-background-position: top center;
-opacity: 0.5;
+    right: 0;
+    background-repeat: repeat-x;
+    background-position: bottom right;
+    background-size: 33%;
+    height: 100%;
+    border-bottom: 8px solid #ddd;
 }
 
-.ripples-animation {
-    position: absolute;
-    bottom:0;
-    left: 0;
-    transform: translateX(50%);
-    pointer-events: none;
-		opacity: 0.2
-}
 
 
 
@@ -62,22 +54,43 @@ body.how-work .entry-text::before {
 background-position:bottom left;
 bottom: 0;
 z-index: 1;
+background-size: 20%;
 }
 
 
 body.career .career_bg::before {
 	 content: '';
     position: absolute;
-    background: url(../images/hero-brand@2x.png) ;
+    background: url(../images/banner-bg.png) ;
     width: 100%;
     height: 100%;
-    top: 0;
     left: 0;
-		background-repeat: no-repeat;
-background-position:center;
+		background-repeat: repeat-x;
+background-position:bottom;
 bottom: 0;
 background-size: 89%;
 }
+
+body.career .career_bg::after {
+	 content: '';
+    position: absolute;
+    background: url(../images/rocket-man.png) ;
+    width: 100%;
+
+height: 100%;
+
+left: -50px;
+
+background-repeat: no-repeat;
+
+background-position: left bottom;
+
+bottom:0;
+
+background-size: 20%;
+animation: mover 1s infinite alternate;
+}
+
 
 body.how-work .entry-text::after {
 
@@ -353,6 +366,37 @@ padding: 12px 15px;
 }
 
 
+.career .navbar {
+    background-color: #fdcc5c;
+    border: none;
+}
+.career .navbar.navbar-fixed-top{
+    background-color:#fff;
+    border:none;
+}
+
+.career .navbar-default .navbar-nav > li > a{
+    color: #fff ;
+}
+
+.career .navbar-default .navbar-nav > li > a:hover, .career .navbar-default .navbar-nav > li > a.active {
+    color: #777 ;
+    background-color: transparent;
+}
+
+.career .navbar-default.navbar-fixed-top .navbar-nav > li > a{
+    color: #777 ;
+    background-color: transparent;
+}
+
+
+.career .navbar-default.navbar-fixed-top .navbar-nav > li > a:hover, .career .navbar-default.navbar-fixed-top .navbar-nav > li > a.active {
+    color: #ccc ;
+    background-color: transparent;
+}
+
+
+
 
 .projects .navbar{
     background-color:#fdcc5c;
@@ -388,8 +432,7 @@ padding: 12px 15px;
 
 
 
-
-.case-study .navbar, .contact .navbar, .career .navbar{
+.case-study .navbar, .contact .navbar{
     background-color:#fff;
     border:none;
 }
@@ -456,7 +499,7 @@ header .navbar-fixed-top  .white-logo {
 }
 
 .entry-text{
-	background:#000;
+	background:#fff;
 	font-size: 38px;
 line-height:38px;
 position: relative;
@@ -466,12 +509,12 @@ letter-spacing: 1px;
 }
 
 .entry-text.career_bg{
-	background:#fff;
+	background:#fdcc5c;
 }
 
 
 .entry-text.career_bg .frame2{
-color: #505050;
+color: #fff;
 }
 
 
@@ -485,6 +528,10 @@ color: #505050;
     display: table-cell;
     width: 100%;
     vertical-align: middle;
+}
+
+.expertise .entry-text .frame2 {
+	color: #505050;
 }
 
 .entry-text .frame2 {
