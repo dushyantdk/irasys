@@ -582,6 +582,11 @@ font-weight:800;
 font-size:43px;
 }
 
+.about .entry-text .frame2 h1 span{
+color:#fdcc5c;
+}
+
+
 .entry-text .frame2 p{
 font-weight:normal;
 font-size:16px;
